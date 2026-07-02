@@ -10,7 +10,7 @@ Manual shift scheduling often overlooks cumulative fatigue effects — a schedul
 
 - **Shift managers** — assign shifts, view risk-flagged schedules before finalizing them
 - **Employees** — view their own upcoming schedule and any flagged fatigue warnings
-- **(Indirectly) Occupational health / HR** — the system's flags support, but don't replace, their oversight
+- **Occupational health / HR** — the system's flags support, but don't replace, their oversight (Indirectly)
 
 ## Dataset Description
 
