@@ -23,27 +23,14 @@ Manual shift scheduling often overlooks cumulative fatigue effects — a schedul
 | `fatigue_rules.csv` | `EmployeeID, FatigueRules` | Per-employee fatigue policy limits (max shift length, min rest, max consecutive nights, max weekly hours) |
 | `schedule.csv` | `EmployeeID, Date, ShiftType, StartTime, EndTime` | Actual dated shift assignments — this is what the fatigue engine evaluates |
 
-50 employees, with a handful of deliberately risky schedules baked into `schedule.csv` (e.g. forced consecutive night runs) to give the fatigue
-engine real test cases.
+50 employees, with a handful of deliberately risky schedules baked into `schedule.csv` (e.g. forced consecutive night runs) to give the fatigue engine real test cases.
 
 ## Tech Stack
-
-- **Backend:** Node.js + Express
-- **Data layer:** CSV files, parsed with `csv-parse`
-- **AI layer:** Claude API for plain-English fatigue explanations
-- **Frontend:** *(TBD by frontend lead — recommend a lightweight SPA or simple HTML/JS dashboard)*
-- **Testing:** Jest + Supertest
 
 ## Project Workflow
 
 ## Team Members
 
 ## Limitations and Responsible Use
-
-- This system is **not a substitute for occupational health guidance**. It is a scheduling aid, not a medical or safety certification tool.
-- Fatigue-risk thresholds (`fatigue_rules.csv`) and scoring weights (`docs/fatigue_rules_paper_draft.md`) are **illustrative, not clinically validated** — they were chosen for a workable classroom demonstration, not derived from occupational-health research.
-- AI-generated explanations and suggestions should always be **reviewed by a human manager** before acting on them — the AI layer explains a rule-based score, it does not independently assess real-world risk.
-- The system does not account for individual medical conditions, personal circumstances, or factors outside the four modeled fatigue factors (shift length, rest gap, consecutive nights, weekly hours).
-- Sample data (`schedule.csv`) is synthetically generated for testing and demo purposes, not real employee data.
 
 ## Project Structure
