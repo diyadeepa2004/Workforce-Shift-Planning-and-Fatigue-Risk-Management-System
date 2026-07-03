@@ -249,8 +249,8 @@ Final scheduling decisions should always be reviewed by managers or HR professio
 
 ## Team Members
 
-| Team Member Name | Responsibility |
-|------------------|----------------|
+| Name | Responsibility |
+|------|----------------|
 | Anna Andrew | Backend Development |
 | Anushka Yadav | Backend Development |
 | Diya Alka Abhilash | Frontend Development |
