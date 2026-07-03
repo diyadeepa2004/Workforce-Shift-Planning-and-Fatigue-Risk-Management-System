@@ -1,90 +1,36 @@
 # Workforce Shift Planning and Fatigue Risk Management System
 
-## Overview
-
-The Workforce Shift Planning and Fatigue Risk Management System is a web-based application that helps managers create employee shift schedules while minimizing fatigue-related risks. The system analyses work schedules using predefined fatigue rules and AI-assisted explanations to identify potentially unsafe schedules and recommend safer alternatives.
-
----
-
 ## Problem Statement
 
-Manual shift scheduling often overlooks cumulative fatigue effects. Although individual shifts may appear reasonable, employees may receive insufficient rest, excessive working hours, or multiple consecutive night shifts. These situations increase the risk of fatigue, reduced productivity, and workplace accidents.
+Manual workforce scheduling often overlooks cumulative fatigue caused by insufficient rest periods, excessive weekly working hours, and consecutive night shifts. Such schedules can negatively impact employee health, productivity, and workplace safety.
 
-This project provides an intelligent scheduling system that evaluates employee schedules, identifies fatigue risks, and recommends improvements before schedules are finalized.
-
----
-
-## Objectives
-
-- Develop a workforce scheduling platform.
-- Detect fatigue risks automatically.
-- Provide AI-generated explanations for risky schedules.
-- Suggest safer shift arrangements.
-- Improve employee well-being while maintaining operational efficiency.
+This project develops a Workforce Shift Planning and Fatigue Risk Management System that helps managers assign shifts while automatically checking fatigue-related risks. The system identifies unsafe schedules, explains why they are risky, and suggests safer alternatives to support better scheduling decisions.
 
 ---
 
-## Real-World Impact
+## Dataset / Reference Source
 
-The system can be used by organizations operating in healthcare, manufacturing, transportation, aviation, customer support, and other industries where employees work in shifts.
+This project uses **custom-generated datasets** based on the starter schema provided in the project guidelines.
 
-Benefits include:
-
-- Improved employee safety
-- Reduced fatigue-related incidents
-- Better shift planning
-- Increased productivity
-- Easier compliance with workplace policies
-
----
-
-## Users / Stakeholders
-
-### Shift Managers
-- Assign employee shifts
-- View fatigue warnings
-- Modify schedules based on recommendations
-
-### Employees
-- View assigned shifts
-- Receive fatigue notifications
-- Monitor upcoming workload
-
-### HR / Occupational Health
-- Review fatigue reports
-- Monitor workforce health
-- Support policy decisions
-
----
-
-## Dataset Description
-
-The project uses custom-generated datasets.
+### Dataset Files
 
 | File | Description |
 |------|-------------|
-| employees.csv | Employee details |
-| shifts.csv | Allowed shift types |
+| employees.csv | Employee information |
+| shifts.csv | Shift types assigned to employees |
 | availability.csv | Employee availability |
 | fatigue_rules.csv | Fatigue policy rules |
-| schedule.csv | Employee shift schedule |
+| schedule.csv | Employee shift assignments |
 
-The dataset contains approximately **50 employees** with intentionally created safe and risky scheduling scenarios for testing.
-
----
-
-## Dataset Source
-
-This project does not require a public dataset.
-
-All datasets are generated according to the starter schema provided in the project guidelines.
+Approximately **50 employee records** are included with both normal and intentionally risky scheduling scenarios for testing fatigue detection.
 
 ---
 
-## Technology Stack
+## Tools Used
 
 ### Frontend
-- React / HTML
+- React
+- HTML
 - CSS
 - JavaScript
 
@@ -94,8 +40,9 @@ All datasets are generated according to the starter schema provided in the proje
 ### Database
 - SQLite
 
-### AI Component
-- OpenAI API / Rule-based Fatigue Engine
+### AI
+- Rule-based Fatigue Detection
+- OpenAI API (for fatigue explanation and schedule suggestions)
 
 ### Version Control
 - Git
@@ -103,82 +50,31 @@ All datasets are generated according to the starter schema provided in the proje
 
 ---
 
-## System Workflow
+## Project Workflow
 
-1. Manager logs into the system.
-2. Employee availability is loaded.
-3. Shift assignments are created.
-4. Fatigue engine analyses schedules.
-5. AI explains detected risks.
-6. Dashboard displays warnings and suggestions.
-7. Manager updates the schedule if required.
+1. Manager creates or updates employee schedules.
+2. Backend stores schedule information in the database.
+3. Fatigue engine evaluates the schedule using predefined fatigue rules.
+4. AI generates explanations for detected fatigue risks.
+5. Dashboard displays warnings and safer scheduling recommendations.
+6. Manager reviews recommendations before finalizing the schedule.
 
 ---
 
-## AI / ML Component
+## AI / ML / Software Component
 
-The AI module analyses generated schedules using fatigue management rules such as:
+The AI module evaluates employee schedules against configurable fatigue rules, including:
 
 - Minimum rest period
 - Maximum weekly working hours
 - Consecutive night shifts
-- Long shift duration
+- Shift duration limits
 
-When a rule is violated, the AI generates an easy-to-understand explanation and suggests safer scheduling alternatives.
-
----
-
-## Features
-
-- Employee management
-- Shift scheduling
-- Availability tracking
-- Fatigue risk detection
-- AI-generated explanations
-- Schedule improvement suggestions
-- Dashboard visualization
+When a fatigue rule is violated, the system generates an explanation in simple English and suggests safer scheduling alternatives to help managers make informed decisions.
 
 ---
 
-## Project Structure
-
-```text
-workforce_shift_planning_and_fatigue_risk_management_system/
-│
-├── data/
-│   ├── employees.csv
-│   ├── shifts.csv
-│   ├── availability.csv
-│   ├── fatigue_rules.csv
-│   └── schedule.csv
-│
-├── notebooks/
-│   └── exploration_or_modeling.ipynb
-│
-├── src/
-│   ├── main.py
-│   ├── preprocessing.py
-│   ├── fatigue_engine.py
-│   ├── ai_explainer.py
-│   └── utils.py
-│
-├── app/
-│   ├── app.py
-│   ├── templates/
-│   └── static/
-│
-├── docs/
-│   ├── project_report.pdf
-│   ├── presentation.pdf
-│   └── screenshots/
-│
-├── requirements.txt
-└── README.md
-```
-
----
-
-## Installation
+## How to Run the Project
 
 ```bash
 git clone <repository-url>
@@ -192,58 +88,47 @@ python app.py
 
 ---
 
-## Sample Output
+## Demo Screenshots
 
-(Add screenshots here after development)
-
-Example:
+*(To be added after implementation.)*
 
 - Dashboard
-- Schedule Table
-- Fatigue Warning
-- AI Suggestion
+- Shift Assignment Page
+- Fatigue Risk Detection
+- AI Recommendation Output
 
 ---
 
 ## Results and Insights
 
-(Add after implementation)
+*(To be updated after implementation.)*
 
-Example:
+Expected outcomes include:
 
-- Successfully detects fatigue risks.
-- Flags consecutive night shifts.
-- Suggests safer shift schedules.
-- Generates understandable AI explanations.
+- Successful fatigue risk detection
+- Identification of unsafe shift patterns
+- AI-generated schedule explanations
+- Improved shift planning decisions
 
 ---
 
 ## Limitations
 
-- Uses synthetic data.
-- Rule-based fatigue analysis.
-- Small dataset.
-- Does not optimize schedules automatically.
-- AI recommendations depend on configured rules.
-
----
-
-## Responsible Use
-
-This system is intended as a decision-support tool.
-
-Final scheduling decisions should always be reviewed by managers or HR professionals.
+- Uses synthetic data for demonstration.
+- Fatigue analysis is primarily rule-based.
+- Recommendations depend on configured fatigue policies.
+- Does not automatically optimize schedules.
 
 ---
 
 ## Future Improvements
 
-- Automatic schedule optimization
-- Machine learning fatigue prediction
+- Automatic shift optimization
+- Machine learning-based fatigue prediction
 - Employee preference learning
 - Calendar integration
 - Mobile application
-- Real-time notifications
+- Email/SMS notifications
 
 ---
 
