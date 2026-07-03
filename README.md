@@ -36,9 +36,10 @@ Approximately **50 employee records** are included with both normal and intentio
 
 ### Backend
 - Flask
+- Node
 
 ### Database
-- SQLite
+- MySQL
 
 ### AI
 - Rule-based Fatigue Detection
