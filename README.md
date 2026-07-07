@@ -138,10 +138,10 @@ Expected outcomes include:
 | Name | Responsibility |
 |------|----------------|
 | Anna Andrew | Backend |
-| Anushka Yadav | Backend |
+| Anushka Yadav | Documentation |
 | Diya Alka Abhilash | Frontend |
-| Santhipriya R | Documentation<br>Demo Video |
-| Vedanti Sharma | Dataset Preparation<br>Backend Development |
+| Santhipriya R | Demo Video<br>Documentation |
+| Vedanti Sharma | Dataset Preparation<br>Documentation |
 
 ---
 
