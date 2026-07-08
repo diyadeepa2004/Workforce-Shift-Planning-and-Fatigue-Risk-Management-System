@@ -14,7 +14,9 @@ The Workforce Shift Planning and Fatigue Risk Management System addresses these 
 
 # Dataset / Reference Source
 
-The project uses structured workforce datasets representing employee information, scheduling constraints, fatigue rules, leave requests, and workforce recommendations.
+Since publicly available workforce scheduling datasets containing employee availability, shift preferences, fatigue constraints, leave requests, and AI recommendations were not available in a single comprehensive format, a synthetic dataset was created specifically for this project.
+
+The dataset was designed to simulate a realistic workforce management environment by incorporating common scheduling scenarios, employee preferences, fatigue rules, and leave management cases. It was generated for educational and demonstration purposes and is suitable for testing the functionality of the proposed system.
 
 ### Datasets Used
 
