@@ -275,4 +275,4 @@ The project illustrates how intelligent decision-support systems can improve wor
 | Anushka Yadav | Documentation |
 | Diya Alka Abhilash | Frontend Development |
 | Santhipriya R | Demo Video<br>Documentation |
-| Vedanti Sharma | Dataset Preparation and Documentation |
+| Vedanti Sharma | Dataset Preparation <br> Documentation |
