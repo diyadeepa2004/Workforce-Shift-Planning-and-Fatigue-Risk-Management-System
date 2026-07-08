@@ -1,0 +1,52 @@
+FatigueRules,,,,,
+Employee ID,Max Shift,Min Rest,NightSchedule,MaxWeekly Hours,Additional Notes
+E001,8h, 12h, MaxConsecNights=2, 40h,
+E002,8h, 12h, No night work, 40h,
+E003,10h, 12h, MaxConsecNights=3, 48h,
+E004,8h, 11h, No consecutive nights, 40h,
+E005,8h, 12h, MaxConsecNights=1, 45h,
+E006,12h, 14h, MaxConsecNights=4, 48h,
+E007,10h, 12h, MaxConsecNights=1, 50h,
+E008,8h, 12h, No night work, 40h,
+E009,10h, 12h, MaxConsecNights=2, 48h,
+E010,12h, 12h, MaxConsecNights=3, 60h,
+E011,8h, 11h, No early mornings, 40h,
+E012,8h, 12h, Weekend only availability, 40h,
+E013,10h, 12h, No nights, 50h,
+E014,12h, 14h, MaxConsecNights=3,48h, Require 24h off after 4 nights 
+E015,8h, 12h, No night work,45h  ,
+E016,8h, 12h, Light duty after illness, 40h,
+E017,10h, 12h, MaxConsecNights=3, 48h,
+E018,8h, 12h, No weekends, 40h,
+E019,10h, 12h, MaxConsecNights=2,  50h, Prefer day long hauls
+E020,8h, 12h, MaxConsecNights=1,40h,  Prefers Sundays off
+E021,8h, 12h, Trainer on day shifts, 40h,
+E022,10h, 12h, MaxConsecNights=1, 50h, Available Saturdays
+E023,8h, 11h, Short routes only, 40h,
+E024,10h, 12h, Can cover emergencies, 50h,
+E025,12h, 14h, Prefer max 2 nights in a row, 48h,
+E026,8h, 12h, No early mornings, 40h,
+E027,8h, 12h, Can do weekend training, 40h,
+E028,10h, 12h, MaxConsecNights=2, 48h, Long rest after night runs
+E029,8h, 12h, MaxEveningsPerWeek=2, 40h,
+E030,8h, 12h, Stable morning schedule, 40h,
+E031,10h, 12h, Monitor fatigue after 3 nights, 48h,
+E032,8h, 12h, Light shifts post-training, 40h,
+E033,10h, 12h, Prefer no >10h shifts, 50h,
+E034,12h, 14h, MaxConsecNights=4,48h, Rotate off after 3 nights 
+E035,8h, 12h, Weekdays only, 40h,
+E036,8h, 12h, No nights, 40h,
+E037,10h, 12h, Ensure 12h rest after night, 50h,
+E038,8h, 12h, Available Sundays, 40h,
+E039,10h, 12h, MaxConsecNights=3, 48h,
+E040,8h, 12h, Reduce consecutive evenings to 2, 40h,
+E041,8h, 11h, No overnight layovers, 40h,
+E042,8h, 12h, Flexible swaps allowed, 40h,
+E043,8h, 12h, Preferred shift trainer, 40h,
+E044,12h, 14h, MaxConsecNights=3, 48h, Weekend nights allowed
+E045,8h, 12h, On-call escalation only, 45h,
+E046,10h, 12h, Limit to 2 consecutive nights, 48h,
+E047,10h, 12h, No >12h runs, 50h,
+E048,8h, 12h, Prefers consistent schedule, 40h,
+E049,8h, 12h, Avoid night shifts, 40h,
+E050,12h, 12h, MaxConsecNights=3,  60h, Max Cumulative Hours
