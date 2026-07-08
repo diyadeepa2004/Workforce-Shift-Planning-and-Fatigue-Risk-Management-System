@@ -40,17 +40,16 @@ These datasets were processed and transformed into structured objects for integr
 - React Router DOM
 - React Icons
 
-## Backend *(if implemented)*
+## Backend 
 
 - Node.js
 - Express.js
 - MongoDB
-- Mongoose
 
 ## AI / Data Processing
 
 - Rule-Based AI Recommendation Engine
-- Google Gemini API *(Optional/Future Integration)*
+- Google Gemini API *(Future Integration)*
 
 ## Development Tools
 
